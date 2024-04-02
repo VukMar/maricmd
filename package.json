@@ -1,14 +1,17 @@
 {
-  "name": "vmark",
-  "version": "0.1.0",
+  "name": "maricmd",
+  "version": "1.1.2",
   "description": "A simple md to html converter",
   "main": "vmark.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run lint && npm test"
   },
   "author": "Vuk Maric",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^8.56.0",
     "jest": "^29.7.0"
   }
 }
