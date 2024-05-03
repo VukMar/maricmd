@@ -133,10 +133,6 @@ function parseParagraph(markdown, i) {
     };
 }
 
-function parseStrikeTrough(markdown,i){
-
-}
-
 function getListElement(markdown, i){
     let index = i + 2;
     let content = '';
