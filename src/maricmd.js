@@ -133,6 +133,10 @@ function parseParagraph(markdown, i) {
     };
 }
 
+function parseStrikeTrough(markdown,i){
+
+}
+
 function getListElement(markdown, i){
     let index = i + 2;
     let content = '';
@@ -276,6 +280,21 @@ function getElements(markdown, isParagraph){
             }
         }
 
+        //Strike Trough
+
+        else if(markdown[i] === '~' && markdown[i+1] === '~'){
+            i = i+2;
+            let content = '';
+            while(markdown[i] !== '~'){
+                content += markdown[i];
+                i++;
+            }
+            while(markdown[i] === '~'){
+                i++;
+            }
+            elements.push({type: "strikethrough", content: content})
+        }
+
         //paragraph
 
         else{
@@ -314,7 +333,9 @@ function decodeElement(element){
             case 'ol':
                 return `<ol>${element.content}</ol>`;
             case 'codeBlock':
-                return `<pre><code${element.language !== ''? " class=language-" + element.language : ''}>${element.content}</code></pre>`
+                return `<pre><code${element.language !== ''? " class=language-" + element.language : ''}>${element.content}</code></pre>`;
+            case 'strikethrough':
+                return `<s>${element.content}</s>`;
         }
 }
 

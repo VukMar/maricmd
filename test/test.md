@@ -60,3 +60,30 @@ console.log('This is a code block');
 Here's an inline code: `console.log('Hello, world!')`.
 
 ---
+
+[^1]: Here is the footnote.
+
+---
+
+Term 1
+: Definition 1
+
+Term 2
+: Definition 2
+
+---
+
+- [ ] Task 1
+- [x] Task 2 (Completed)
+- [ ] Task 3
+
+---
+
+~~Strikethrough text~~
+
+---
+
+| Header 1 | Header 2 |
+|----------|----------|
+| Row 1    | Row 1    |
+| Row 2    | Row 2    |
