@@ -1,4 +1,4 @@
-![Maricmd Logo](https://backend.vukmaric.rs/api/maricmd/maricmd.png)
+![Maricmd Logo](https://vukmaric.com/backend/api/maricmd/maricmd.png)
 
 # MARICMD
 
