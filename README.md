@@ -85,7 +85,7 @@ Below is a list of Markdown elements and their implementation status in maricmd:
 - [x] Blockquotes
 - [x] Inline Code
 - [ ] Tables
-- [ ] Strikethrough
+- [x] Strikethrough
 - [ ] Task lists
 - [ ] Definition lists
 - [ ] Footnotes
